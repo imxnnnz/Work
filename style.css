@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+  }
+  * a {
+    text-decoration: none;
+  }
+  * li {
+    list-style: none;
+  }
+  .container {
+    min-height: 100vh;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .bg {
+    position: relative;
+    width: 100%;
+    height: 1000%;
+  }
+  .bg::after {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    filter: brightness(45%);
+    background-image: url("https://fanclubthailand.co.uk/wp-content/uploads/2022/09/Trat_Ko-Rang_1600.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .navBar {
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    height: 15vh;
+
+  }
+  .navBar ul {
+    display: flex;
+    align-items: center;
+  }
+  .navBar ul li {
+    padding: 0 25px;
+  }
+  .navBar ul li a {
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: bolder;
+    letter-spacing: 1.5px;
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    position: absolute;
+  }
+  .trat {
+    color: #fff;
+    padding: 25px;
+  }
+  .card {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+  }
+  .card h2 {
+    color: #fff;
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+  }
+  .card .box1,
+  .box2,
+  .box3,
+  .box4 {
+    width: 90%;
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  .box1 {
+    background-image: url("https://cms.dmpcdn.com/travel/2020/03/09/972e6470-61e0-11ea-8884-dfd81909e81a_original.JPG");
+  }
+  .box2 {
+    background-image: url("https://cms.dmpcdn.com/travel/2020/03/09/990307f0-61e1-11ea-9435-358bb29e7b15_original.JPG");
+  }
+  .box3 {
+    background-image: url("https://cms.dmpcdn.com/travel/2023/05/15/2afc61e0-f2e1-11ed-a690-35fa78e9467a_webp_original.jpg");
+  }
+  .box4 {
+    background-image: url("https://cms.dmpcdn.com/travel/2023/05/15/28310ce0-f2e1-11ed-a690-35fa78e9467a_webp_original.jpg");
+  }
+  .trat h2 {
+    font-size: 2.5rem;
+    letter-spacing: 2.8px;
+  }
+  .text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .txt h1 {
+    font-size: 10rem;
+  }
+  .trat p {
+    opacity: 0.4;
+  }
+  .tnx h2 i {
+    color: #fd7e13;
+  }
+  .card div {
+    transition: 0.5s;
+  }
+  .card div:hover {
+    transition: 0.3s;
+    transform: translateY(-0px);
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  }
+  
+  
